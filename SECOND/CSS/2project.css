@@ -1,0 +1,809 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Rajdhani&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation bar */
+#navbar {
+    z-index: 1;
+    position: relative;
+    position: absolute;
+    /* top: 0; */
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul {
+    display: flex;
+    margin-left: 10px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    padding-left: 35px;
+}
+
+#navbar ul li a {
+    font-family: 'Akaya Telivigala', cursive;
+    display: block;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+#navhome{
+    transform: scale(1.2);
+}
+
+/* logo and image */
+#logo {
+    margin: 10px 400px;
+}
+
+#logo img {
+    filter: saturate(2);
+    height: 90px;
+    margin: -4px 10px;
+}
+
+#logo div p {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-weight: bolder;
+    left: 22.9rem;
+    font-size: 2rem;
+    font-family: 'Akaya Telivigala', cursive;
+    top: 3.25rem;
+    z-index: -1;
+}
+
+/* Home section */
+#home {
+    position: relative;
+    height: 29.5rem;
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../IMAGES/mainbg.jpg') no-repeat center top/cover;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -2;
+    filter: brightness(45%);
+}
+
+#home h1 {
+    text-align: center;
+
+}
+
+
+#home p {
+    font-family: 'Rajdhani', sans-serif;
+    margin-bottom: 0.8rem;
+    font-size: 2.9rem;
+    text-align: center;
+
+}
+
+/* service section */
+.service-cont {
+    margin-top: 2rem;
+    display: flex;
+    position: absolute;
+    height: 18rem;
+    left: 20rem;
+    width: 74rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.service-cont .inside-box {
+    margin: 10px 12px 0px 12px;
+    transition: all .3s ease-in-out;
+}
+
+.service-cont .inside-box img {
+    height: 15.5rem;
+    border-radius: 19px;
+    width: 23rem;
+    object-fit: cover;
+}
+
+.chat1 {
+    position: relative;
+    height: 90px;
+    bottom: 5.3rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-bottom-left-radius: 19px;
+    border-bottom-right-radius: 19px;
+    border-bottom: .1px solid rgb(236, 236, 236);
+    border-left: .1px solid rgb(236, 236, 236);
+    border-right: .1px solid rgb(236, 236, 236);
+    padding: 1rem;
+    padding-left: 1.3rem;
+    box-sizing: border-box;
+    align-self: flex-start;
+}
+
+.chat1 p {
+    padding-top: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.chat1 h3 {
+    font-family: 'Quicksand', sans-serif
+}
+
+/* service hover */
+.service-cont .inside-box:hover {
+    transform: scale(1.02);
+}
+
+/* collections */
+
+#collection-box {
+    display: flex;
+    position: relative;
+    height: 32rem;
+    left: 20rem;
+    width: 74rem;
+    justify-content: center;
+    align-items: flex-start;
+    top: 20rem;
+}
+
+#collection-box:hover {
+    cursor: pointer;
+}
+
+#collection {
+    position: absolute;
+    left: 1rem;
+    top: 2.5rem;
+}
+
+#collection h1 {
+    font-size: 2.5rem;
+    font-family: 'Quicksand', sans-serif
+}
+
+#collection p {
+    font-family: 'Raleway', sans-serif;
+    ;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+div .cont-image1 img {
+    position: absolute;
+    height: 22rem;
+    top: 9rem;
+    left: 1rem;
+    width: 18rem;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: brightness(75%);
+    opacity: .9;
+    transition: all 0.3s ease-in-out;
+}
+
+div .cont-image1 img:hover {
+    transform: scale(1.01);
+}
+
+div .cont-image2 img:hover {
+    transform: scale(1.01);
+}
+
+div .cont-image3 img:hover {
+    transform: scale(1.01);
+}
+
+div .cont-image4 img:hover {
+    transform: scale(1.01);
+}
+
+div .cont-image2 img {
+
+    position: absolute;
+    height: 22rem;
+    top: 9rem;
+    left: 19.5rem;
+    width: 17.5rem;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: brightness(60%);
+    opacity: .9;
+    transition: all 0.3s ease-in-out;
+}
+
+div .cont-image3 img {
+
+    position: absolute;
+    height: 22rem;
+    top: 9rem;
+    left: 37.5rem;
+    width: 17.5rem;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: brightness(60%);
+    opacity: .9;
+    transition: all 0.3s ease-in-out;
+}
+
+div .cont-image4 img {
+
+    object-fit: cover;
+    position: absolute;
+    height: 22rem;
+    top: 9rem;
+    left: 55.5rem;
+    width: 17.5rem;
+    border-radius: 10px;
+    filter: brightness(75%);
+    opacity: .9;
+    transition: all 0.3s ease-in-out;
+}
+
+.insta {
+    display: inline;
+    font-size: 25px;
+    position: absolute;
+    top: 27.5rem;
+    left: 2rem;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+}
+
+.insta2 {
+    display: inline;
+    font-size: 25px;
+    position: absolute;
+    top: 27.5rem;
+    left: 20.7rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 60px rgb(0, 0, 0);
+}
+
+.insta3 {
+    display: inline;
+    font-size: 25px;
+    position: absolute;
+    top: 27.5rem;
+    left: 38.7rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 60px rgb(0, 0, 0);
+}
+
+.insta4 {
+    display: inline;
+    font-size: 25px;
+    position: absolute;
+    top: 27.8rem;
+    left: 56.7rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 60px rgb(0, 0, 0);
+}
+
+
+/* utility classes */
+.hprimary {
+    transform: skew(-5deg, 0deg);
+    margin-top: 8rem;
+    margin-bottom: 0.001rem;
+    font-family: 'Secular One', sans-serif;
+    font-size: 4.5rem;
+}
+
+.btn {
+    padding: 10px;
+    margin: 10px;
+    height: 3rem;
+    width: 53rem;
+    border-radius: .8rem;
+    text-align: center;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+}
+
+/* population section */
+
+#popu-box {
+    margin-top: 26rem;
+    position: relative;
+    height: 30rem;
+    left: 20rem;
+    width: 74rem;
+    justify-content: center;
+}
+
+#popu-box #popu {
+    position: absolute;
+    left: 1rem;
+    top: 2.5rem;
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+#popu-box .can-box ul {
+    display: grid;
+    grid-template-columns: 24.5rem 24.5rem 24.5rem;
+    position: relative;
+    top: 7rem;
+}
+
+#popu-box .can-box ul li {
+    list-style: none;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding-left: 1rem;
+}
+
+#popu-box .can-box ul li a {
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    padding: .7rem .5rem;
+    width: 23.4rem;
+    height: 4.6rem;
+    border-radius: 0.5rem;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(232, 232, 232);
+    margin-bottom: 0.3rem;
+    font-size: large;
+    padding-left: 15px;
+    padding-top: 13px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: rgb(28 28 28 / 8%) 0px 1.42623px 2.85246px;
+}
+
+#popu-box .can-box ul li .seemore {
+    text-align: center;
+    padding-top: 1.4rem;
+}
+
+.places {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+#popu-box .can-box ul li a:hover {
+    box-shadow: rgb(28 28 28 / 8%) 0px 4px 8px;
+}
+
+/* Mobile app section */
+
+#mobile {
+    display: flex;
+    margin-top: 2rem;
+    padding: 5rem;
+    background-color: rgb(255, 251, 247);
+    width: 100%;
+    max-width: 100%;
+    height: 31rem;
+    box-sizing: border-box;
+}
+
+#mobile .mobile1 {
+    display: flex;
+}
+
+#mobile .mobile1 .mobile2 {
+    position: relative;
+    height: 18rem;
+    top: 3rem;
+    left: 27.5rem;
+}
+
+#mobile .mobile1 .mobile2 img {
+    height: 17.5rem;
+}
+
+#total {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50rem;
+    position: relative;
+    left: 28rem;
+    bottom: 2rem;
+    height: 25rem;
+}
+
+#mobile .mobile1 .app {
+    font-size: 2.39rem;
+    font-weight: bold;
+    height: 3rem;
+    width: 30rem;
+    position: absolute;
+    left: 3rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#mobile .mobile1 .link p {
+    height: 3rem;
+    color: rgb(74, 74, 74);
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top: 4rem;
+    left: 3rem;
+    line-height: 2rem;
+}
+
+#emailmob {
+    font-family: 'Raleway', sans-serif;
+    height: 1.5rem;
+    width: 12rem;
+    display: flex;
+    position: absolute;
+    top: 8rem;
+    left: 3rem;
+    width: 12rem;
+    justify-content: space-between;
+    margin-top: 1.8rem;
+}
+
+#emailmob .under {
+    cursor: pointer;
+}
+
+#emailmob .under .mail {
+    width: 0.9rem;
+    height: 0.9rem;
+    color: red;
+    vertical-align: middle;
+    border-radius: 50%;
+    outline: none;
+}
+
+#emailmob .under .phone {
+    width: 0.9rem;
+    height: 0.9rem;
+    color: red;
+    vertical-align: middle;
+    border-radius: 50%;
+    outline: none;
+}
+
+.nounder {
+    position: absolute;
+    top: 13rem;
+    left: 2rem;
+    display: flex;
+    height: 3rem;
+    width: 30rem;
+}
+
+.nounder input[type='email'] {
+    height: 3rem;
+    position: absolute;
+    left: 1rem;
+    background: rgb(255, 255, 255);
+    border: 0.1rem solid rgb(207, 207, 207);
+    font-size: 18px;
+    width: 18rem;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+    padding-left: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nounder button {
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    left: 19.5rem;
+    box-sizing: border-box;
+    outline: none;
+    width: 9rem;
+    height: 3rem;
+    font-size: 1.03rem;
+    border: none;
+    border-radius: 0.4rem;
+    display: flex;
+    background-color: rgb(239, 78, 78);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#appimage {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    position: relative;
+    top: 18rem;
+    left: 0.59rem;
+    width: 45rem;
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.bothimage {
+    height: 10rem;
+}
+
+.playstore {
+    position: relative;
+    bottom: 1.4rem;
+    right: 8.67rem;
+}
+
+.apple {
+    position: relative;
+    height: 4.3rem;
+    top: 1.49rem;
+    right: 8.4rem;
+}
+
+/* Explore section */
+#explore {
+    background-color: rgb(252, 252, 252);
+    height: 30.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#explore .exmainbox .exdivbox {
+    margin-top: 4.3rem;
+}
+
+#explore .exmainbox {
+    margin-top: 3rem;
+    height: 26.5rem;
+    width: 72.3rem;
+    position: relative;
+    left: 1.3rem;
+}
+
+.exmainbox>h1 {
+    height: 2.4rem;
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    color: rgb(45, 45, 45);
+}
+
+#explore .exmainbox .exdivbox .exul {
+    display: grid;
+    grid-template-rows: 4rem;
+    grid-auto-rows: 4rem;
+    grid-gap: 1.5rem;
+}
+
+#explore .exmainbox .exdivbox .exul .exli {
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    border: 1px solid rgb(232, 232, 232);
+    list-style: none;
+    box-sizing: border-box;
+    padding: 1.35rem 1.3rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+#explore .exmainbox .exdivbox .exul .exli:hover {
+    cursor: pointer;
+}
+
+/* Footer */
+
+#mainfoot {
+    height: 30rem;
+    display: flex;
+    background: rgb(248, 248, 248);
+    justify-content: center;
+}
+
+#secfoot {
+    width: 72.3rem;
+    left: 1.4rem;
+    position: relative;
+}
+
+#thfoot {
+    display: flex;
+    margin-top: 2rem;
+}
+
+#thfoot .footname {
+    padding: 1rem 0rem 1rem 0rem;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: 'Secular One', sans-serif;
+    width: 52rem;
+}
+
+#thfoot .footmap {
+    padding: 0rem 0rem 2rem 0rem;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    width: 20rem;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    margin-top: 2px;
+}
+
+#mainfoot #secfoot #thfoot .footmap .ind {
+    min-width: 6rem;
+    width: max-content;
+    max-width: 100%;
+    cursor: pointer;
+    position: relative;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid rgb(181, 181, 181);
+    background: rgb(248, 248, 248);
+    border-radius: 0.6rem;
+    text-align: center;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 20px;
+    margin: 4px;
+    margin-left: 7.5rem;
+    font-size: 1rem;
+}
+
+#mainfoot #secfoot #thfoot .footmap .engl {
+    min-width: 6rem;
+    background: rgb(248, 248, 248);
+    width: max-content;
+    max-width: 100%;
+    cursor: pointer;
+    position: relative;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 0.6rem;
+    text-align: center;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 15px;
+    margin: 4px;
+    font-size: 0.9rem;
+}
+
+/* about */
+
+#about {
+    max-height: 100%;
+    min-height: 14rem;
+    margin-top: 0.5rem;
+
+}
+
+.mainab {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    margin-top: 0.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    font-size: 0.7rem;
+    padding: 0.3rem;
+}
+
+#whoab {
+    margin-top: 1rem;
+}
+
+.maingrid {
+    display: grid;
+    grid-template-rows: repeat(6, 2fr);
+    grid-template-columns: repeat(4, 14.4rem);
+}
+
+.maingrid p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: .13rem;
+    padding: 0.3rem;
+    color: rgb(105, 105, 105);
+}
+
+.maingrid h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.haha {
+    grid-row: 3/5;
+    grid-column: 3/4;
+    padding-top: 29px;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    font-size: 0.9rem;
+
+}
+
+.hehe {
+    grid-row: 5/7;
+    grid-column: 3/4;
+}
+
+/* socila links */
+
+#socialinks {
+    display: grid;
+    justify-content: flex-end;
+    position: absolute;
+    width: 12rem;
+    top: 7.8rem;
+    left: 57rem;
+}
+
+#socialinks h1 {
+    margin-top: 0.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    font-size: 0.9rem;
+}
+
+#socialinks h1 img {
+    height: 2rem;
+    display: flex;
+}
+
+#socialinks h1 .simg1 {
+    top: 0.9rem;
+    height: 4.5rem;
+    position: relative;
+    right: 1rem;
+}
+
+#socialinks h1 .simg2 {
+    height: 10.4rem;
+    position: relative;
+    right: 0.7rem;
+    bottom: 3rem;
+}
+
+/*  last  */
+hr {
+    margin-top: 3.2rem;
+    width: 71rem;
+}
+
+#endby {
+    font-size: .9rem;
+    color: rgb(79, 79, 79);
+    line-height: 1.5rem;
+    margin-top: 1.7rem;
+    font-family: 'Raleway', sans-serif;
+}
